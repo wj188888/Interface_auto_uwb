@@ -53,7 +53,7 @@ def test_authorization_login1():
     }
     my_body = json.dumps(my_body)
     rp = requests.post(url=urls, headers=Headers, data=my_body)
-    # print(rp.json())
+    print(rp.json())
     assert rp.status_code == 200
     assert rp.json()['code'] == 200
     return rp

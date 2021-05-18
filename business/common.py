@@ -5,14 +5,14 @@ import json
 
 # 获取token
 def get_token():
-    token = "Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiYXV0aFR5cGUiOiIxIiwic3ViIjoiMTY4NTU1NDExMjIiLCJpYXQiOjE2MTY3MzU5ODcsImV4cCI6MTYxOTMyNzk4N30.jPw7FO7ELLX61z0CeZHjyaas6jnxjS3uNvV1i9Qe3tE"
+    token = "Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2NiIsImF1dGhUeXBlIjoiMSIsInN1YiI6IjE4NDI4MzMzNjU4IiwiaWF0IjoxNjIxMjIwODM0LCJleHAiOjE2MjM4MTI4MzR9.RygFiczKDCA1u0_vvcfENXIePmtU652NbXXNEkM4eB8"
     return token
 def current_token():
     head = {"Content-Type": "application/json"}
     api = '/v1/authorization/login'
     urls = http_host() + api
     my_body = {
-        "name": "16855541122",
+        "name": "18428333658",
         "password": "12345678"
     }
     my_body = json.dumps(my_body)
@@ -57,6 +57,7 @@ def search_org_list():
         'searchKey': None
     }
     rp = requests.get(headers=http_header(), url=urls, params=my_params)
+    # print(rp.json())
     return rp
 
 def search_app_list(orgID):

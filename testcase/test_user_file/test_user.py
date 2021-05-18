@@ -36,9 +36,9 @@ def test_create_user():
             org_Id
         ],
         "password": "12345678",
-        "phone": "18428333651",
-        "realName": "张三",
-        "remark": "张三的高精度平台账号",
+        "phone": "18428333658",
+        "realName": "王杰",
+        "remark": "王杰的高精度平台账号",
         "superAdmin": False
     }
     my_body = json.dumps(my_data)

@@ -33,8 +33,9 @@ def test_create_apikey():
     api = '/v1/apikey/' + str(org_Id)
     urls = host + api
     my_body = {
-        "applicationId": app_Id, # 应用级别添加这个应用id
-        "name": "高精度定位API_wj",
+        # "applicationId": app_Id, # 应用级别添加这个应用id
+        # "name": "高精度定位API_wj",
+        "name": "王杰的公司王杰的公司王杰的公司王杰的公司王杰的公司王杰的公司",
         "whiteLists": [
             "192.168.10.125",
             "192.168.10.144"

@@ -24,22 +24,22 @@ def test_create_organization():
     api = '/v1/organization'
     urls = host + api
     my_body = {
-            "contactName": "王杰",
-            "contactPhone": "18428333658",
+            "contactName": "张三",
+            "contactPhone": "18428333659",
             "maxApplicationCount": 20,
             "description": "",
             "maxGatewayCount": 20,
             "maxRegionCount": 20,
             "maxTerminalCount": 20,
             "maxStationCount": 30,
-            "name": "大汇-科技"
+            "name": "大汇科技"
     }
     my_body = json.dumps(my_body)
     rp = requests.post(url=urls, headers=Headers, data=my_body)
     print(rp.json())
     assert rp.status_code == 200
     assert rp.json()['code'] == 200
-    assert rp.json()['data']['name'] == "大汇-科技"
+    assert rp.json()['data']['name'] == "大汇科技"
     assert rp.json()['data']['enabled'] is True
 time.sleep(1)
 def test_update_organization():

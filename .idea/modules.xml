@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../1_Python/.idea/1_Python.iml" filepath="$PROJECT_DIR$/../1_Python/.idea/1_Python.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PythonDemo/.idea/PythonDemo.iml" filepath="$PROJECT_DIR$/../PythonDemo/.idea/PythonDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/UwbNetworkServer.iml" filepath="$PROJECT_DIR$/.idea/UwbNetworkServer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../XiaoXu/.idea/XiaoXu.iml" filepath="$PROJECT_DIR$/../XiaoXu/.idea/XiaoXu.iml" />
     </modules>
   </component>
 </project>

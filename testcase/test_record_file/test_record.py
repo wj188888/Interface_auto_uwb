@@ -19,8 +19,8 @@ def test_record():
     api = '/v1/record/search'
     urls = host + api
     my_params = {
-        "startTime": "2021-03-16 17:17:05",
-        "endTime": "2021-04-12 17:17:05",
+        "startTime": "2021-04-16 17:17:05",
+        "endTime": "2021-05-12 17:17:05",
         "page": 1,
         "pageSize": 100,
         "searchKey": " "
